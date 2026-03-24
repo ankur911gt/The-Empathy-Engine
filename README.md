@@ -28,21 +28,30 @@ An emotion-aware text-to-speech service. Give it text, it figures out the emotio
 
 ![Full UI](screenshots/Full%20UI.png)
 
+-------------------------------------------------------------------------------------------
 **Sadness Result** — Left side: confidence breakdown across all 7 emotions (sadness and neutral tied at 31%). Right side: the voice was slowed by 12%, pitch dropped 8Hz, volume dropped 8%. You can hear the difference.
 
 ![Results - Sadness](screenshots/results-sadness.png)
+
+-------------------------------------------------------------------------------------------
 
 **Comparison Mode** — Same text spoken three ways. Joy is fast (+30% rate, +26Hz pitch), sadness is slow (-34% rate, -21Hz), anger is loud (+26% volume). Play all three back to back.
 
 ![Comparison Mode](screenshots/Comparison.png)
 
+-------------------------------------------------------------------------------------------
+
 **SSML Output** — The SSML markup tab shows what's actually being sent to the TTS engine. Each sentence has its own `<prosody>` tag, and there's a 393ms pause between them because the emotion is sadness.
 
 ![SSML Markup](screenshots/SSML%20Markup.png)
 
+-------------------------------------------------------------------------------------------
+
 **79 Tests Passing** — Mapper, emotion detection, text preprocessor, and API integration tests all green.
 
 ![Tests Passing](screenshots/tests-passing.png)
+
+-------------------------------------------------------------------------------------------
 
 ---
 
